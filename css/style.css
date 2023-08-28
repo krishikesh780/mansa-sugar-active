@@ -956,3 +956,38 @@ footer {
 .step p {
   font-size: 0.875rem;
 }
+
+/* Change background color when scrolled */
+
+@media (min-width: 992px) {
+  .navbar.scrolled {
+    background-color: white; /* Change background color when scrolled */
+    height: 100px;
+    width: 100%;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+  }
+
+  .navbar-brand img {
+    max-height: 100px; /* Decrease logo size when scrolled */
+    transition: max-height 0.3s ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar.scrolled {
+    background-color: white; /* Change background color when scrolled */
+    height: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: -50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+  }
+
+  .navbar-brand img {
+    max-height: 100px; /* Decrease logo size when scrolled */
+    transition: max-height 0.3s ease;
+  }
+}
+
+/* end */
